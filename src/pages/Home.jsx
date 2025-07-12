@@ -69,7 +69,7 @@ const Home = () => {
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-              GoldStar
+              GoldenStar
             </span>
             <span className="text-white"> Detailing</span>
           </h1>
@@ -78,12 +78,12 @@ const Home = () => {
             From basic washes to showroom-quality restorations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/packages"
+            <a
+              href="#packages"
               className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold py-4 px-8 rounded-lg hover:from-yellow-300 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105"
             >
               View Packages
-            </Link>
+            </a>
             <a
               href="#contact"
               className="border-2 border-yellow-400 text-yellow-400 font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 hover:text-black transition-all duration-300"
@@ -106,7 +106,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-yellow-400 mb-4">
-              Why Choose GoldStar?
+              Why Choose GoldenStar?
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               We combine innovation and precision to restore your vehicle's sparkle. 
@@ -136,7 +136,7 @@ const Home = () => {
       </section>
 
       {/* Featured Package Section as Cards */}
-      <section className="py-20 bg-black">
+      <section id="packages" className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-yellow-400 mb-4">
@@ -235,6 +235,16 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="relative overflow-hidden">
+        <div className="text-left mb-12">
+          <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400 bg-clip-text text-transparent mb-4">
+           Where We Operate
+          </h3>
+          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full shadow-lg"></div>
+        </div>
+        <ServicesProvidedAreas />
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -281,10 +291,10 @@ const Home = () => {
             <div>
               <Instructions />
             </div>
-            <ServicesProvidedAreas />
           </div>
         </div>
       </section>
+
     </div>
   );
 };
